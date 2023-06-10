@@ -6,13 +6,8 @@ import { RemoveBooksComponent } from './component/remove-books/remove-books.comp
 
 
 const routes: Routes = [
-  {
-    path: 'user', component: UserComponent,
-    children: [
-      { path: 'add-book', component: AddBooksComponent },
-      { path: 'remove-book', component: RemoveBooksComponent }
-    ]
-  }
+  { path: 'add-book', component: AddBooksComponent },
+  { path: 'remove-book', component: RemoveBooksComponent }
 ]
 
 

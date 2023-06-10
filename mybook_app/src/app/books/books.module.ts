@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './component/home/home.component';
 import { AllBooksComponent } from './component/all-books/all-books.component';
 import { BookDetailsComponent } from './component/book-details/book-details.component';
-import { PublicRoutingModule } from './public-routing.module';
-import { PublicComponent } from './public/public.component';
+import { BooksRoutingModule } from './books-routing.module';
+import { BooksComponent } from './books.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
     AllBooksComponent,
     BookDetailsComponent,
-    PublicComponent
+    BooksComponent
   ],
   imports: [
     CommonModule,
-    PublicRoutingModule
+    BooksRoutingModule,
+    SharedModule
+
   ]
 })
-export class PublicModule { }
+export class BooksModule { }
